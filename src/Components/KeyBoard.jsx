@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 const KeyBoard = (props) => {
   const [keys, setKeys] = useState(props.value);
-  console.log(props.value);
   const [booleanToggle, setBooleanToggle] = useState(false);
   let values = props.value.split("");
   // console.log(values);

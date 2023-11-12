@@ -11,29 +11,42 @@ function App() {
   const [value, setValue] = useState(
     "1234567890-=qwertyuiop[]asdfghjkl;'<>zxcvbnm,./"
   );
+  const [undo, setundo] = useState([]);
   const [color, setColor] = useState("black");
   const [size, setSize] = useState("12");
+
+  function handleUndo() {
+    if (!undo[0]) {
+      return;
+    }
+    setText(undo[undo.length - 1]);
+    setundo((prev) => [...prev].slice(0, prev.length - 1));
+  }
+
   function handleText(key) {
     if (key == -1) {
       setText((prev) => [...prev].slice(0, prev.length - 1));
+      setundo((prev) => [...prev, text]);
       return;
     } else if (key == "All") {
       setText((prev) => []);
+      setundo((prev) => [...prev, text]);
       return;
     }
     setText((prev) => {
+      setundo((prev) => [...prev, text]);
       return [...prev, { char: key, color: color, size: size }];
     });
   }
   function handleColor(color) {
     setColor(color);
   }
+
   function handleLang(lang) {
     console.log(lang);
     setLang(lang);
     switch (lang) {
       case "eng":
-        console.log("here");
         setValue("1234567890-=qwertyuiop[]asdfghjkl;'<>zxcvbnm,./");
         break;
       case "heb":
@@ -53,6 +66,9 @@ function App() {
         <Color setColor={handleColor} />
         <Size handleSize={handleSize} />
         <Lang setLang={handleLang} />
+        <button type="button" onClick={handleUndo}>
+          undo
+        </button>
       </div>
       <DisplayText text={text} />
       <KeyBoard value={value} lang={lang2} setText={handleText} />
