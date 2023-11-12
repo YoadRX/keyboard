@@ -9,6 +9,8 @@ import Lang from "./Components/Lang";
 function App() {
   const [text, setText] = useState("");
   const [lang, setLang] = useState("eng");
+  const [color, setColor] = useState("black");
+  const [size, setSize] = useState("12");
   function handleText(key) {
     if (key == -1) {
       setText((prev) => prev.slice(0, prev.length - 1));
@@ -23,20 +25,29 @@ function App() {
     });
   }
 
+  function handleColor(color) {
+    setColor(color);
+  }
+
   function handleLang(lang) {
     console.log(lang);
 
     setLang(lang);
   }
 
+  function handleSize(event) {
+    console.log(event.target.value);
+    setSize(event.target.value);
+  }
+
   return (
     <>
       <div id="bar">
-        <Color />
-        <Size />
+        <Color setColor={handleColor} />
+        <Size handleSize={handleSize} />
         <Lang setLang={handleLang} />
       </div>
-      <DisplayText text={text} />
+      <DisplayText text={text} color={color} size={size} />
       <KeyBoard
         value="1234567890-=qwertyuiop[]asdfghjkl;'\<>zxcvbnm,./"
         lang={lang}
