@@ -11,8 +11,10 @@ const Size = (props) => {
     <div>
       <label htmlFor="sizes">Size </label>
       <select name="sizes" id="sizes" onChange={props.handleSize}>
-        {sizes.map((size) => (
-          <option value={size}>{size}</option>
+        {sizes.map((size, index) => (
+          <option key={index} value={size}>
+            {size}
+          </option>
         ))}
       </select>
     </div>

@@ -2,14 +2,20 @@ import React from "react";
 import { useState } from "react";
 
 const DisplayText = (props) => {
-  const textStyle = {
-    color: `${props.color}`,
-    fontSize: `${props.size}px`,
-    whiteSpace: "pre",
-  };
   return (
-    <div id="textContainer" style={textStyle}>
-      {props.text}
+    <div id="textContainer">
+      {props.text.map((item, index) => (
+        <span
+          key={index}
+          style={{
+            color: item.color,
+            fontSize: `${item.size}px`,
+            whiteSpace: "pre",
+          }}
+        >
+          {item.char}
+        </span>
+      ))}
     </div>
   );
 };
