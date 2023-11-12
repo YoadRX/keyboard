@@ -2,12 +2,14 @@ import React from "react";
 import { useState } from "react";
 
 const KeyBoard = ({ value, lang }) => {
-  const keys = value.split("");
-
+  const [keys, setKeys] = useState(value);
+  const values = keys.split("");
   return (
-    <div id="keyboard">
-      {keys.map((key, index) => (
-        <button id={index} onClick={}>{key}</button>
+    <div>
+      {values.map((key, index) => (
+        <button key={index} id={index}>
+          {key}
+        </button>
       ))}
     </div>
   );
