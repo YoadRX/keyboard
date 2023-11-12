@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const Lang = (props) => {
+export const Lang = (props) => {
   return (
     <div>
       <button type="button">Lang</button>
@@ -14,4 +14,4 @@ const Lang = (props) => {
   );
 };
 
-export default Lang;
+// export default Lang;

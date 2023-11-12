@@ -2,9 +2,10 @@ import React, { useState } from "react";
 
 const KeyBoard = (props) => {
   const [keys, setKeys] = useState(props.value);
+  console.log(props.value);
   const [booleanToggle, setBooleanToggle] = useState(false);
-  let values = keys.split("");
-
+  let values = props.value.split("");
+  // console.log(values);
   function toggleCaps() {
     setBooleanToggle(!booleanToggle);
   }
@@ -45,7 +46,6 @@ const KeyBoard = (props) => {
         <button onClick={toggleCaps} className="keyBtn button-28" id="CapsLock">
           Caps Lock
         </button>
-
         <button
           className="keyBtn button-28"
           id="DeleteAll"
