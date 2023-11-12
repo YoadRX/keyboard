@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-
+import "./Btn.css";
 const Size = (props) => {
   const sizes = [];
   for (let i = 2; i <= 100; i += 2) {
