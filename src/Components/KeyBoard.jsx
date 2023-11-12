@@ -6,14 +6,18 @@ const KeyBoard = ({ value, lang }) => {
   const values = keys.split("");
   return (
     <>
-      <div>
+      <div id="keyboard">
         {values.map((key, index) => (
-          <button key={index} id={index}>
+          <button className="keyBtn" key={index} id={index}>
             {key}
           </button>
         ))}
-        <button id="Space">Space</button>
-        <button id="Delete">Delete</button>
+        <button className="keyBtn" id="Space">
+          Space
+        </button>
+        <button className="keyBtn" id="Delete">
+          Delete
+        </button>
       </div>
     </>
   );

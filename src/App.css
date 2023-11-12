@@ -1,8 +1,18 @@
 #keyboard {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
 }
-
+.keyBtn{
+  margin: 3px;
+  background-color: rgb(207, 214, 214);
+}
 #keyboard * {
   width: 8.33%;
+}
+#Space{
+  width: 20%;
+}
+#Delete{
+  width: 10%;
 }
