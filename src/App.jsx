@@ -12,6 +12,8 @@ function App() {
   const [value, setValue] = useState(
     "1234567890-=qwertyuiop[]asdfghjkl;'<>zxcvbnm,./"
   );
+  const [color, setColor] = useState("black");
+  const [size, setSize] = useState("12");
   function handleText(key) {
     if (key === -1) {
       setText((prev) => prev.slice(0, prev.length - 1));
@@ -24,6 +26,10 @@ function App() {
       console.log(prev + key);
       return prev + key;
     });
+  }
+
+  function handleColor(color) {
+    setColor(color);
   }
 
   function handleLang(lang) {
@@ -43,11 +49,16 @@ function App() {
     }
   }
 
+  function handleSize(event) {
+    console.log(event.target.value);
+    setSize(event.target.value);
+  }
+
   return (
     <>
       <div id="bar">
-        <Color />
-        <Size />
+        <Color setColor={handleColor} />
+        <Size handleSize={handleSize} />
         <Lang setLang={handleLang} />
       </div>
       <DisplayText text={text} />
