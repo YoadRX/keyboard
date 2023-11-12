@@ -1,22 +1,28 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import Size from "./Components/Size";
-import Color from "./Components/Color";
 import KeyBoard from "./Components/KeyBoard";
-import Lang from "./Components/Lang";
 import DisplayText from "./Components/DisplayText";
+import Bar from "./Components/Bar";
 
 function App() {
-  const [text, setText] = useState("");
-
+  const [text, setText] = useState("jpoiegir\nnlkfe");
   function handleText(key) {
-    setText((prev) => prev + key);
+    if (key == -1) {
+      setText((prev) => prev.slice(0, prev.length - 1));
+      return;
+    } else if (key == "All") {
+      setText((prev) => "");
+      return;
+    }
+    setText((prev) => {
+      console.log(prev + key);
+      return prev + key;
+    });
   }
 
   return (
     <>
+      <Bar></Bar>
       <DisplayText text={text} />
       <KeyBoard
         value="1234567890-=qwertyuiop[]asdfghjkl;'\<>zxcvbnm,./"

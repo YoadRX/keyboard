@@ -17,11 +17,34 @@ const KeyBoard = (props) => {
             {key}
           </button>
         ))}
-        <button className="keyBtn" id="Space">
+        <button
+          className="keyBtn"
+          id="Space"
+          onClick={() => props.setText(" ")}
+        >
           Space
         </button>
-        <button className="keyBtn" id="Delete">
+        <button
+          className="keyBtn"
+          id="Delete"
+          onClick={() => props.setText(-1)}
+        >
           Delete
+        </button>
+
+        <button
+          className="keyBtn"
+          id="DeleteAll"
+          onClick={() => props.setText("All")}
+        >
+          Delete All
+        </button>
+        <button
+          className="keyBtn"
+          id="enter"
+          onClick={() => props.setText("\n")}
+        >
+          Enter
         </button>
       </div>
     </>
