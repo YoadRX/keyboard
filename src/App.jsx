@@ -5,6 +5,7 @@ import DisplayText from "./Components/DisplayText";
 import Color from "./Components/Color";
 import Size from "./Components/Size";
 import { Lang } from "./Components/Lang";
+import "./Components/Btn.css";
 function App() {
   const [text, setText] = useState([]);
   const [lang2, setLang] = useState("");
@@ -66,8 +67,13 @@ function App() {
         <Color setColor={handleColor} />
         <Size handleSize={handleSize} />
         <Lang setLang={handleLang} />
-        <button type="button" onClick={handleUndo}>
-          undo
+        <button
+          className="colorbtn"
+          id="undo"
+          type="button"
+          onClick={handleUndo}
+        >
+          Undo
         </button>
       </div>
       <DisplayText text={text} />

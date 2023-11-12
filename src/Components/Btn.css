@@ -77,3 +77,15 @@ select,option{
   width: 55%;
   text-align: center;
 }
+#DeleteAll{
+  background-color: rgb(254, 66, 66);
+  color: white  ;
+}
+#Delete{
+  background-color: rgb(91, 86, 86);
+  color: white  ;
+}
+#undo{
+  background-color: rgb(244, 18, 18);
+  color: white  ;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./Btn.css";
 const KeyBoard = (props) => {
   const [keys, setKeys] = useState(props.value);
   const [booleanToggle, setBooleanToggle] = useState(false);
@@ -14,7 +14,7 @@ const KeyBoard = (props) => {
       <div id="keyboard">
         {values.map((key, index) => (
           <button
-            className="keyBtn button-28"
+            className="keyBtn button-28 "
             key={index}
             id={index}
             onClick={() => {
