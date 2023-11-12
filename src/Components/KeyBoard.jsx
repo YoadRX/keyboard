@@ -14,7 +14,7 @@ const KeyBoard = (props) => {
       <div id="keyboard">
         {values.map((key, index) => (
           <button
-            className="keyBtn"
+            className="keyBtn button-28"
             key={index}
             id={index}
             onClick={() => {
@@ -29,32 +29,32 @@ const KeyBoard = (props) => {
           </button>
         ))}
         <button
-          className="keyBtn"
+          className="keyBtn button-28"
           id="Space"
           onClick={() => props.setText(" ")}
         >
           Space
         </button>
         <button
-          className="keyBtn"
+          className="keyBtn button-28"
           id="Delete"
           onClick={() => props.setText(-1)}
         >
           Delete
         </button>
-        <button onClick={toggleCaps} className="keyBtn" id="CapsLock">
+        <button onClick={toggleCaps} className="keyBtn button-28" id="CapsLock">
           Caps Lock
         </button>
 
         <button
-          className="keyBtn"
+          className="keyBtn button-28"
           id="DeleteAll"
           onClick={() => props.setText("All")}
         >
           Delete All
         </button>
         <button
-          className="keyBtn"
+          className="keyBtn button-28"
           id="enter"
           onClick={() => props.setText("\n")}
         >
