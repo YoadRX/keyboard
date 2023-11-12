@@ -29,6 +29,11 @@ function App() {
         lang="eng"
         setText={handleText}
       />
+      <KeyBoard
+        value="1234567890-=/'קראטוןםפ][שדגכעיחלךף,\<זסבהנמצתץ.ד"
+        lang="heb"
+        setText={handleText}
+      />
     </>
   );
 }
