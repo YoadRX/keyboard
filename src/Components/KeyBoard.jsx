@@ -18,7 +18,7 @@ const KeyBoard = (props) => {
             key={index}
             id={index}
             onClick={() => {
-              if (booleanToggle) {
+              if (!booleanToggle) {
                 props.setText(key);
               } else {
                 props.setText(key.toUpperCase());
