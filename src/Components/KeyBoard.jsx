@@ -3,10 +3,11 @@ import { useState } from "react";
 
 const KeyBoard = ({ value, lang }) => {
   const keys = value.split("");
+
   return (
-    <div>
-      {keys.forEach((element) => (
-        <button>{element}</button>
+    <div id="keyboard">
+      {keys.map((key, index) => (
+        <button id={index} onClick={}>{key}</button>
       ))}
     </div>
   );

@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
-const DisplayText = () => {
-  return <div>DisplayText</div>;
+const DisplayText = (props) => {
+  return <div></div>;
 };
 
 export default DisplayText;

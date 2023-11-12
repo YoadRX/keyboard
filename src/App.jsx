@@ -8,11 +8,14 @@ import KeyBoard from "./Components/KeyBoard";
 import Lang from "./Components/Lang";
 import DisplayText from "./Components/DisplayText";
 function App() {
+  const [text, setText] = useState("");
   return (
     <>
+      <DisplayText setText={setText} />
       <KeyBoard
-        value="1234567890-=qwertyuiop[]asdfghjkl;'\<zxcvbnm,./"
+        value="1234567890-=qwertyuiop[]asdfghjkl;'\<>zxcvbnm,./"
         lang="eng"
+        setText={setText}
       />
     </>
   );
