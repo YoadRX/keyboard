@@ -7,6 +7,7 @@
 .keyBtn{
   margin: 3px;
   background-color: rgb(207, 214, 214);
+  font-size: 1.2rem;
 }
 
 #keyboard * {
