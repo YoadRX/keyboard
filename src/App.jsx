@@ -5,7 +5,7 @@ import DisplayText from "./Components/DisplayText";
 import Bar from "./Components/Bar";
 
 function App() {
-  const [text, setText] = useState("jpoiegir\nnlkfe");
+  const [text, setText] = useState("");
   function handleText(key) {
     if (key == -1) {
       setText((prev) => prev.slice(0, prev.length - 1));

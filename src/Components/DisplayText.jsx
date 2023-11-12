@@ -4,8 +4,8 @@ import { useState } from "react";
 const DisplayText = (props) => {
   return (
     <div id="textContainer">
-      {/* {props.text} */}
-      {"aaa\naaaa"}
+      {props.text}
+      {/* {"aaa\naaaa"} */}
     </div>
   );
 };
