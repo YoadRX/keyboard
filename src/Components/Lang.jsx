@@ -1,14 +1,14 @@
 import React from "react";
 import { useState } from "react";
 
-const Lang = () => {
+const Lang = (props) => {
   return (
     <div>
       <button type="button">Lang</button>
       <div id="languages-container">
-        <button>English</button>
-        <button>Hebrew</button>
-        <button>Spanish</button>
+        <button onClick={() => props.setLang("eng")}>English</button>
+        <button onClick={() => props.setLang("heb")}>Hebrew</button>
+        <button onClick={() => props.setLang("span")}>Spanish</button>
       </div>
     </div>
   );
