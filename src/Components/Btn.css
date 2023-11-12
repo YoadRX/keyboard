@@ -1,0 +1,79 @@
+
+/* CSS */
+.colorbtn {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: .375em;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #363636;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1rem;
+  height: 2.5em;
+  padding: 20px;
+  margin: 5px;
+  justify-content: center;
+  line-height: 1.5;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+}
+
+.colorbtn:active {
+  border-color: #4a4a4a;
+  outline: 0;
+}
+
+.colorbtn:focus {
+  border-color: #485fc7;
+  outline: 0;
+}
+
+.colorbtn:hover {
+  background-color:#dedede;
+  transition: all 0.5s
+}
+
+.colorbtn:focus:not(:active) {
+  box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
+}
+#black:hover{
+  background-color:rgb(44, 41, 41);
+  color: aliceblue;
+  transition: all 0.5s
+}
+#red:hover{
+  background-color:red;
+  color: aliceblue;
+  transition: all 0.5s
+}
+#blue:hover{
+  background-color:blue;
+  color: aliceblue;
+  transition: all 0.5s
+}
+#yellow:hover{
+  background-color:yellow;
+  color: rgb(0, 0, 0);
+  transition: all 0.5s
+}
+label{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3rem;
+  margin: 10px;
+}
+select,option{
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.1rem;
+  background-color: #ffffff;
+  border: 0.5px solid black;
+  border-radius: 3px;
+  width: 55%;
+  text-align: center;
+}
