@@ -1,9 +1,14 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const KeyBoard = (props) => {
   const [keys, setKeys] = useState(props.value);
-  const values = keys.split("");
+  const [booleanToggle, setBooleanToggle] = useState(false);
+  let values = keys.split("");
+
+  function toggleCaps() {
+    setBooleanToggle(!booleanToggle);
+  }
+
   return (
     <>
       <div id="keyboard">
@@ -12,7 +17,13 @@ const KeyBoard = (props) => {
             className="keyBtn"
             key={index}
             id={index}
-            onClick={() => props.setText(key)}
+            onClick={() => {
+              if (booleanToggle) {
+                props.setText(key);
+              } else {
+                props.setText(key.toUpperCase());
+              }
+            }}
           >
             {key}
           </button>
@@ -22,6 +33,9 @@ const KeyBoard = (props) => {
         </button>
         <button className="keyBtn" id="Delete">
           Delete
+        </button>
+        <button onClick={toggleCaps} className="keyBtn" id="CapsLock">
+          Caps Lock
         </button>
       </div>
     </>
