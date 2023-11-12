@@ -16,6 +16,14 @@ const DisplayText = (props) => {
           {item.char}
         </span>
       ))}
+      <span
+        id="line"
+        style={{
+          fontSize: `${props.text[props.text.length - 1]?.size || 12}px`,
+        }}
+      >
+        |
+      </span>
     </div>
   );
 };
