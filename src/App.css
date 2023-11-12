@@ -3,7 +3,8 @@
   flex-wrap: wrap;
   margin: auto;
   border: 2px solid black;
-  padding: 10px;
+  padding: 20px;
+  
 }
 
 .keyBtn{
@@ -59,7 +60,7 @@ body {
   appearance: none;
   background-color: transparent;
   border: 2px solid #1A1A1A;
-  border-radius: 15px;
+  border-radius: 10px;
   box-sizing: border-box;
   color: #3B3B3B;
   cursor: pointer;
