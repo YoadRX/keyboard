@@ -24,19 +24,19 @@ function App() {
     setundo((prev) => [...prev].slice(0, prev.length - 1));
   }
 
-  function handleText(key) {
-    if (key == -1) {
+  function handleText(char) {
+    if (char == -1) {
       setText((prev) => [...prev].slice(0, prev.length - 1));
       setundo((prev) => [...prev, text]);
       return;
-    } else if (key == "All") {
+    } else if (char == "All") {
       setText((prev) => []);
       setundo((prev) => [...prev, text]);
       return;
     }
     setText((prev) => {
       setundo((prev) => [...prev, text]);
-      return [...prev, { char: key, color: color, size: size }];
+      return [...prev, { char: char, color: color, size: size }];
     });
   }
   function handleColor(color) {

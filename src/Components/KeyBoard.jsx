@@ -12,20 +12,20 @@ const KeyBoard = (props) => {
   return (
     <>
       <div id="keyboard">
-        {values.map((key, index) => (
+        {values.map((char, index) => (
           <button
             className="keyBtn button-28 "
             key={index}
             id={index}
             onClick={() => {
               if (!booleanToggle) {
-                props.setText(key);
+                props.setText(char);
               } else {
-                props.setText(key.toUpperCase());
+                props.setText(char.toUpperCase());
               }
             }}
           >
-            {key}
+            {char}
           </button>
         ))}
         <button
