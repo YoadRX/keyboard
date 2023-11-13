@@ -10,28 +10,28 @@ const Color = (props) => {
         <button
           className="colorbtn"
           id="red"
-          onClick={() => props.setColor("red")}
+          onClick={() => props.handleColor("red")}
         >
           red
         </button>
         <button
           className="colorbtn"
           id="blue"
-          onClick={() => props.setColor("blue")}
+          onClick={() => props.handleColor("blue")}
         >
           blue
         </button>
         <button
           className="colorbtn"
           id="yellow"
-          onClick={() => props.setColor("yellow")}
+          onClick={() => props.handleColor("yellow")}
         >
           yellow
         </button>
         <button
           className="colorbtn"
           id="black"
-          onClick={() => props.setColor("black")}
+          onClick={() => props.handleColor("black")}
         >
           black
         </button>

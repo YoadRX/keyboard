@@ -6,6 +6,7 @@ const DisplayText = (props) => {
     <div id="textContainer">
       {props.text.map((item, index) => (
         <span
+          className="letter"
           key={index}
           style={{
             color: item.color,

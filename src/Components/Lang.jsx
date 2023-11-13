@@ -9,13 +9,13 @@ export const Lang = (props) => {
         Lang
       </label>
       <div id="languages-container">
-        <button className="colorbtn" onClick={() => props.setLang("eng")}>
+        <button className="colorbtn" onClick={() => props.handleLang("eng")}>
           English
         </button>
-        <button className="colorbtn" onClick={() => props.setLang("heb")}>
+        <button className="colorbtn" onClick={() => props.handleLang("heb")}>
           Hebrew
         </button>
-        <button className="colorbtn" onClick={() => props.setLang("rus")}>
+        <button className="colorbtn" onClick={() => props.handleLang("rus")}>
           Russian
         </button>
       </div>

@@ -46,9 +46,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  overflow-y: scroll;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  overflow: auto;
+  gap: 0;
 }
 
 #bar {
@@ -104,8 +105,9 @@ body {
   
 }
 
-span {
+/* .letter {
   margin: 0;
   padding: 0;
   height: fit-content;
-}
+  margin-bottom: -10vh;
+} */

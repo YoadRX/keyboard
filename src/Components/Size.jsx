@@ -7,10 +7,16 @@ const Size = (props) => {
     sizes.push(i);
   }
 
+  console.log(props.size);
   return (
     <div>
       <label htmlFor="sizes">Size </label>
-      <select name="sizes" id="sizes" onChange={props.handleSize}>
+      <select
+        value={props.size}
+        name="sizes"
+        id="sizes"
+        onChange={props.handleSize}
+      >
         {sizes.map((size, index) => (
           <option key={index} value={size}>
             {size}
