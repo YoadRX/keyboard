@@ -73,9 +73,9 @@ function App() {
   return (
     <>
       <div id="bar">
-        <Color setColor={handleColor} />
-        <Size handleSize={handleSize} />
-        <Lang setLang={handleLang} />
+        <Color handleColor={handleColor} />
+        <Size handleSize={handleSize} size={size} />
+        <Lang handleLang={handleLang} />
         <button
           className="colorbtn"
           id="undo"

@@ -42,10 +42,11 @@ body {
   border-radius: 5px 5px 0 0;
   white-space: pre-line;
   padding: 1vw;
+  margin: 50px;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 2rem;
-    overflow:auto ;
+  overflow: auto ;
 }
 
 #bar {
@@ -99,8 +100,9 @@ body {
   
 }
 
-span {
+/* .letter {
   margin: 0;
   padding: 0;
   height: fit-content;
-}
+  margin-bottom: -10vh;
+} */
