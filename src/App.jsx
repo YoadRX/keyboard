@@ -56,6 +56,14 @@ function App() {
       case "rus":
         setValue("ё1234567890-ъяшертыуиопющэасдфгчйкльжзхцвбнм;:");
         break;
+      case "arb":
+        setValue("1234567890ء=قويرتيويوپ[]اسدفعهجكل؛'<زخچڢبنم،.");
+        break;
+      case "jap":
+        setValue(
+          "ぬふあうえおやゆよわほへたていすかんなにらぜ゜ちとしはきくまのりれけむむつさそひこみもねるめ"
+        );
+        break;
     }
   }
   function handleSize(event) {
