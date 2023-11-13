@@ -58,6 +58,12 @@ function App() {
         break;
       case "arb":
         setValue("1234567890ء=قويرتيويوپ[]اسدفعهجكل؛'<زخچڢبنم،.");
+        break;
+      case "jap":
+        setValue(
+          "ぬふあうえおやゆよわほへたていすかんなにらぜ゜ちとしはきくまのりれけむむつさそひこみもねるめ"
+        );
+        break;
     }
   }
   function handleSize(event) {
