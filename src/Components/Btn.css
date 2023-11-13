@@ -88,4 +88,5 @@ select,option{
 #undo{
   background-color: rgb(244, 18, 18);
   color: white  ;
+  margin:30px 9vw;
 }
