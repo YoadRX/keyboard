@@ -39,6 +39,7 @@ body {
   height: 30vh;
   border: 1px solid black;
   margin: auto;
+  border-radius: 5px 5px 0 0;
   white-space: pre-line;
   padding: 1vw;
   font-family: 'Montserrat', sans-serif;

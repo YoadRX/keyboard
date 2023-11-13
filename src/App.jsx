@@ -6,6 +6,7 @@ import Color from "./Components/Color";
 import Size from "./Components/Size";
 import { Lang } from "./Components/Lang";
 import "./Components/Btn.css";
+
 function App() {
   const [text, setText] = useState([]);
   const [lang2, setLang] = useState("");

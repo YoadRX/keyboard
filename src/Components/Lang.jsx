@@ -6,7 +6,7 @@ export const Lang = (props) => {
   return (
     <div>
       <label className="" type="button">
-        Lang
+        Language
       </label>
       <div id="languages-container">
         <button className="colorbtn" onClick={() => props.setLang("eng")}>
